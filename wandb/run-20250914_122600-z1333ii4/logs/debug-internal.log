@@ -1,0 +1,16 @@
+{"time":"2025-09-14T12:26:00.58304201+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250914_122600-z1333ii4/logs/debug-core.log"}
+{"time":"2025-09-14T12:26:01.135244821+07:00","level":"INFO","msg":"created new stream","id":"z1333ii4"}
+{"time":"2025-09-14T12:26:01.135362869+07:00","level":"INFO","msg":"stream: started","id":"z1333ii4"}
+{"time":"2025-09-14T12:26:01.135431429+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:26:01.135441241+07:00","level":"INFO","msg":"sender: started","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:26:01.135516386+07:00","level":"INFO","msg":"handler: started","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:26:01.538852721+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-14T12:29:55.770014506+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-14T12:29:55.770122087+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-14T12:29:56.772815219+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.466552185,"progress":"28.6KB/28.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.218809256,"progress":"1.4KB/1.4KB"}],"total_operations":2}}
+{"time":"2025-09-14T12:29:56.891186437+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T12:29:57.278338956+07:00","level":"INFO","msg":"stream: closing","id":"z1333ii4"}
+{"time":"2025-09-14T12:29:57.278383956+07:00","level":"INFO","msg":"handler: closed","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:29:57.278407208+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:29:57.278429688+07:00","level":"INFO","msg":"sender: closed","stream_id":"z1333ii4"}
+{"time":"2025-09-14T12:29:57.278523686+07:00","level":"INFO","msg":"stream: closed","id":"z1333ii4"}

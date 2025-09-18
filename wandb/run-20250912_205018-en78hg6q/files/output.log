@@ -1,0 +1,91 @@
+Namespace(seed=3407, cuda=0, epochs=50, batch_size=64, lr=0.0001, weight_decay=0.05, optimizer='AdamW', clip_value=1, dropout=0.1, classifier='all_patch_reps', downstream_dataset='PEARL', datasets_dir='/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl', num_of_classes=2, model_dir='./data/wjq/models_weights/Big/BigFaced', num_workers=16, label_smoothing=0.1, multi_lr=False, frozen=False, use_pretrained_weights=True, foundation_dir='pretrained_weights/pretrained_weights.pth')
+The downstream dataset is PEARL
+3255 476 874
+4605
+Model(
+  (backbone): CBraMod(
+    (patch_embedding): PatchEmbedding(
+      (positional_encoding): Sequential(
+        (0): Conv2d(200, 200, kernel_size=(19, 7), stride=(1, 1), padding=(9, 3), groups=200)
+      )
+      (proj_in): Sequential(
+        (0): Conv2d(1, 25, kernel_size=(1, 49), stride=(1, 25), padding=(0, 24))
+        (1): GroupNorm(5, 25, eps=1e-05, affine=True)
+        (2): GELU(approximate='none')
+        (3): Conv2d(25, 25, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (4): GroupNorm(5, 25, eps=1e-05, affine=True)
+        (5): GELU(approximate='none')
+        (6): Conv2d(25, 25, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (7): GroupNorm(5, 25, eps=1e-05, affine=True)
+        (8): GELU(approximate='none')
+      )
+      (spectral_proj): Sequential(
+        (0): Linear(in_features=101, out_features=200, bias=True)
+        (1): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-11): 12 x TransformerEncoderLayer(
+          (self_attn_s): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=100, out_features=100, bias=True)
+          )
+          (self_attn_t): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=100, out_features=100, bias=True)
+          )
+          (linear1): Linear(in_features=200, out_features=800, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=800, out_features=200, bias=True)
+          (norm1): LayerNorm((200,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((200,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (proj_out): Identity()
+  )
+  (classifier): Sequential(
+    (0): Rearrange('b c s d -> b (c s d)')
+    (1): Linear(in_features=19000, out_features=1000, bias=True)
+    (2): ELU(alpha=1.0)
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=1000, out_features=200, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Dropout(p=0.1, inplace=False)
+    (7): Linear(in_features=200, out_features=1, bias=True)
+    (8): Rearrange('b 1 -> (b 1)')
+  )
+)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 51/51 [00:06<00:00,  8.34it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 43.18it/s]
+Epoch 1 : Training Loss: 0.62041, acc: 0.50210, pr_auc: 0.49239, roc_auc: 0.52392, LR: 0.00010, Time elapsed 0.11 mins
+[[180  58]
+ [179  59]]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 45.30it/s]
+Val Evaluation: acc: 0.82301, pr_auc: 0.89992, roc_auc: 0.90010
+[[413  55]
+ [ 96 310]]
+roc_auc increasing....saving weights !!
+Val Evaluation: acc: 0.50210, pr_auc: 0.49239, roc_auc: 0.52392
+ 78%|███████████████████████████████████████████████████████████████████████████████████▏                      | 40/51 [00:03<00:00, 11.05it/s]
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_main.py", line 170, in <module>
+    main()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_main.py", line 156, in main
+    t.train_for_binaryclass()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_trainer.py", line 182, in train_for_binaryclass
+    torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.params.clip_value)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 36, in _no_grad_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 221, in clip_grad_norm_
+    total_norm = _get_total_norm(grads, norm_type, error_if_nonfinite, foreach)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 36, in _no_grad_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 89, in _get_total_norm
+    norms.extend(torch._foreach_norm(device_tensors, norm_type))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

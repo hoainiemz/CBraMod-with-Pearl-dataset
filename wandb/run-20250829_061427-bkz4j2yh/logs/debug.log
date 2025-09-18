@@ -1,0 +1,23 @@
+2025-08-29 06:14:27,547 INFO    MainThread:1762399 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250829_061427-bkz4j2yh/logs/debug.log
+2025-08-29 06:14:27,548 INFO    MainThread:1762399 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250829_061427-bkz4j2yh/logs/debug-internal.log
+2025-08-29 06:14:27,548 INFO    MainThread:1762399 [wandb_init.py:init():830] calling init triggers
+2025-08-29 06:14:27,548 INFO    MainThread:1762399 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'lr': 2.636875533972305e-06, 'dropout': 0.011616722433639893, 'weight_decay': 5.407712220288122e-06, 'clip_value': 1.7992642186624028, '_wandb': {}}
+2025-08-29 06:14:29,481 INFO    MainThread:1762399 [wandb_init.py:init():871] starting backend
+2025-08-29 06:14:29,481 INFO    MainThread:1762399 [wandb_init.py:init():874] sending inform_init request
+2025-08-29 06:14:29,482 INFO    MainThread:1762399 [wandb_init.py:init():882] backend started and connected
+2025-08-29 06:14:29,490 INFO    MainThread:1762399 [wandb_init.py:init():953] updated telemetry
+2025-08-29 06:14:29,500 INFO    MainThread:1762399 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-08-29 06:14:30,356 INFO    MainThread:1762399 [wandb_init.py:init():1029] starting run threads in backend
+2025-08-29 06:14:30,445 INFO    MainThread:1762399 [wandb_run.py:_console_start():2494] atexit reg
+2025-08-29 06:14:30,446 INFO    MainThread:1762399 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-08-29 06:14:30,446 INFO    MainThread:1762399 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-08-29 06:14:30,446 INFO    MainThread:1762399 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-08-29 06:14:30,446 INFO    MainThread:1762399 [wandb_init.py:init():1075] run started, returning control to user process
+2025-08-29 06:25:18,595 INFO    MainThread:1762399 [wandb_run.py:_finish():2260] finishing run hoainiem-hanoi-university-of-science-and-technology/finetune-50e-optuna-asha/bkz4j2yh
+2025-08-29 06:25:18,595 INFO    MainThread:1762399 [wandb_run.py:_atexit_cleanup():2459] got exitcode: 0
+2025-08-29 06:25:18,595 INFO    MainThread:1762399 [wandb_run.py:_restore():2441] restore
+2025-08-29 06:25:18,596 INFO    MainThread:1762399 [wandb_run.py:_restore():2447] restore done
+2025-08-29 06:25:20,511 INFO    MainThread:1762399 [wandb_run.py:_footer_history_summary_info():3895] rendering history
+2025-08-29 06:25:20,511 INFO    MainThread:1762399 [wandb_run.py:_footer_history_summary_info():3927] rendering summary
+2025-08-29 06:25:20,512 INFO    MainThread:1762399 [wandb_run.py:_footer_sync_info():3856] logging synced files

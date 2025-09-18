@@ -1,0 +1,12 @@
+{"time":"2025-09-18T23:10:37.732844231+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T23:10:39.146271776+07:00","level":"INFO","msg":"stream: created new stream","id":"xtgy7swh"}
+{"time":"2025-09-18T23:10:39.146316865+07:00","level":"INFO","msg":"stream: started","id":"xtgy7swh"}
+{"time":"2025-09-18T23:10:39.146346786+07:00","level":"INFO","msg":"writer: started","stream_id":"xtgy7swh"}
+{"time":"2025-09-18T23:10:39.146369085+07:00","level":"INFO","msg":"sender: started","stream_id":"xtgy7swh"}
+{"time":"2025-09-18T23:10:39.146364842+07:00","level":"INFO","msg":"handler: started","stream_id":"xtgy7swh"}
+{"time":"2025-09-18T23:13:24.86960388+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.383552088}],"total_operations":1}}
+{"time":"2025-09-18T23:13:26.229184903+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T23:13:26.572785366+07:00","level":"INFO","msg":"stream: closing","id":"xtgy7swh"}
+{"time":"2025-09-18T23:13:26.572821058+07:00","level":"INFO","msg":"handler: closed","stream_id":"xtgy7swh"}
+{"time":"2025-09-18T23:13:26.572907152+07:00","level":"INFO","msg":"sender: closed","stream_id":"xtgy7swh"}
+{"time":"2025-09-18T23:13:26.572928907+07:00","level":"INFO","msg":"stream: closed","id":"xtgy7swh"}

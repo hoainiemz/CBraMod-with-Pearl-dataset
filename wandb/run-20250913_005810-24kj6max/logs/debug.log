@@ -1,0 +1,183 @@
+2025-09-13 00:58:10,946 INFO    MainThread:3650939 [wandb_setup.py:_flush():80] Current SDK version is 0.21.1
+2025-09-13 00:58:10,948 INFO    MainThread:3650939 [wandb_setup.py:_flush():80] Configure stats pid to 3650939
+2025-09-13 00:58:10,949 INFO    MainThread:3650939 [wandb_setup.py:_flush():80] Loading settings from /home/aiotlab/.config/wandb/settings
+2025-09-13 00:58:10,949 INFO    MainThread:3650939 [wandb_setup.py:_flush():80] Loading settings from /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/settings
+2025-09-13 00:58:10,949 INFO    MainThread:3650939 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-09-13 00:58:10,950 INFO    MainThread:3650939 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250913_005810-24kj6max/logs/debug.log
+2025-09-13 00:58:10,950 INFO    MainThread:3650939 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250913_005810-24kj6max/logs/debug-internal.log
+2025-09-13 00:58:10,951 INFO    MainThread:3650939 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7c64c6f18a70>
+2025-09-13 00:58:10,952 INFO    MainThread:3650939 [wandb_init.py:init():830] calling init triggers
+2025-09-13 00:58:10,953 INFO    MainThread:3650939 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'seed': 3407, 'cuda': 0, 'epochs': 50, 'batch_size': 64, 'lr': 0.0001, 'weight_decay': 0.05, 'optimizer': 'AdamW', 'clip_value': 1, 'dropout': 0.1, 'classifier': 'all_patch_reps', 'downstream_dataset': 'PEARL', 'datasets_dir': '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl', 'num_of_classes': 2, 'model_dir': './data/wjq/models_weights/Big/BigFaced', 'num_workers': 16, 'label_smoothing': 0.1, 'multi_lr': False, 'frozen': False, 'use_pretrained_weights': True, 'foundation_dir': 'pretrained_weights/pretrained_weights.pth', '_wandb': {}}
+2025-09-13 00:58:10,953 INFO    MainThread:3650939 [wandb_init.py:init():871] starting backend
+2025-09-13 00:58:11,219 INFO    MainThread:3650939 [wandb_init.py:init():874] sending inform_init request
+2025-09-13 00:58:11,251 INFO    MainThread:3650939 [wandb_init.py:init():882] backend started and connected
+2025-09-13 00:58:11,268 INFO    MainThread:3650939 [wandb_run.py:_label_probe_notebook():1318] probe notebook
+2025-09-13 00:58:11,302 INFO    MainThread:3650939 [wandb_init.py:init():953] updated telemetry
+2025-09-13 00:58:11,314 INFO    MainThread:3650939 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-09-13 00:58:12,487 INFO    MainThread:3650939 [wandb_init.py:init():1029] starting run threads in backend
+2025-09-13 00:58:13,140 INFO    MainThread:3650939 [wandb_run.py:_console_start():2494] atexit reg
+2025-09-13 00:58:13,141 INFO    MainThread:3650939 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-09-13 00:58:13,142 INFO    MainThread:3650939 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-09-13 00:58:13,142 INFO    MainThread:3650939 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-09-13 00:58:13,149 INFO    MainThread:3650939 [wandb_init.py:init():1075] run started, returning control to user process
+2025-09-13 00:58:31,073 WARNING MsgRouterThr:3650939 [router.py:message_loop():63] [no run ID] message_loop has been closed
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 27, in _read_message
+    return self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 227, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 212, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/router.py", line 56, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 29, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-09-13 00:58:31,181 INFO    MsgRouterThr:3650939 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-09-13 00:58:32,570 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 00:58:32,572 ERROR   MainThread:3650939 [redirect.py:_on_write():664] [all runs] error in stdout callback
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 593, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 787, in publish_resume
+    self._publish_resume(resume)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 294, in _publish_resume
+    self._publish(rec)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2415, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-09-13 00:58:32,611 ERROR   MainThread:3650939 [redirect.py:_on_write():664] [all runs] error in stdout callback
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 593, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 787, in publish_resume
+    self._publish_resume(resume)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 294, in _publish_resume
+    self._publish(rec)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2415, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-09-13 00:58:33,162 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 00:58:33,162 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 00:58:33,242 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:25,095 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:25,096 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:25,171 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:26,109 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:26,110 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:26,198 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:35,864 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:35,864 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:35,957 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:36,931 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:36,931 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:37,019 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:37,255 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:37,255 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:37,315 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:37,491 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:37,491 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:37,578 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:45:37,705 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:45:37,705 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:45:37,777 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-09-13 01:46:00,436 INFO    MainThread:3650939 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-09-13 01:46:00,437 INFO    MainThread:3650939 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-09-13 01:46:00,533 INFO    MainThread:3650939 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend

@@ -6,11 +6,12 @@ import lmdb
 import pickle
 import numpy as np
 import pandas as pd
+import sys
 
 
-train_dir = '/data/datasets/BigDownstream/Imagined speech/mat/Training set'
-val_dir = '/data/datasets/BigDownstream/Imagined speech/mat/Validation set'
-test_dir = '/data/datasets/BigDownstream/Imagined speech/mat/Test set'
+train_dir = '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/bcic/Track3/Training set'
+val_dir = '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/bcic/Track3/Validation set'
+test_dir = '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/bcic/Track3/Test set'
 
 
 
@@ -28,7 +29,7 @@ dataset = {
     'test': list(),
 }
 
-db = lmdb.open('/data/datasets/BigDownstream/Imagined speech/processed', map_size=3000000000)
+db = lmdb.open('/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/speech/processed', map_size=3000000000)
 
 for file in files_dict['train']:
     data = scipy.io.loadmat(os.path.join(train_dir, file))
@@ -71,7 +72,7 @@ for file in files_dict['val']:
         dataset['val'].append(sample_key)
 
 
-df = pd.read_excel("/data/datasets/BigDownstream/Imagined speech/mat/Track3_Answer Sheet_Test.xlsx")
+df = pd.read_excel("/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/bcic/Track3/Track3_Answer Sheet_Test.xlsx")
 df_=df.head(53)
 all_labels=df_.values
 print(all_labels.shape)

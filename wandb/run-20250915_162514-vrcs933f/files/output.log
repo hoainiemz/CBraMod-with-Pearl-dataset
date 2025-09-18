@@ -1,0 +1,41 @@
+502 117 133
+752
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 111, in <module>
+    main()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 84, in main
+    model = model_for_pearl.Model(params).cuda()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1082, in cuda
+    return self._apply(lambda t: t.cuda(device))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1082, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+                                 ^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/cuda/__init__.py", line 412, in _lazy_init
+    torch._C._cuda_init()
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7ae30b5dc0e0>
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/service/service_connection.py", line 54, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/lib/service/service_connection.py", line 182, in teardown
+    self._router.join()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:

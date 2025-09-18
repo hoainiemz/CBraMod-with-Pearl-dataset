@@ -1,0 +1,12 @@
+{"time":"2025-09-17T21:24:14.131249741+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T21:24:14.607972115+07:00","level":"INFO","msg":"stream: created new stream","id":"tk3nsdso"}
+{"time":"2025-09-17T21:24:14.608045095+07:00","level":"INFO","msg":"stream: started","id":"tk3nsdso"}
+{"time":"2025-09-17T21:24:14.608069611+07:00","level":"INFO","msg":"sender: started","stream_id":"tk3nsdso"}
+{"time":"2025-09-17T21:24:14.608071525+07:00","level":"INFO","msg":"writer: started","stream_id":"tk3nsdso"}
+{"time":"2025-09-17T21:24:14.60816048+07:00","level":"INFO","msg":"handler: started","stream_id":"tk3nsdso"}
+{"time":"2025-09-17T21:34:44.950129236+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001179853}],"total_operations":1}}
+{"time":"2025-09-17T21:34:46.380253695+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T21:34:46.741407153+07:00","level":"INFO","msg":"stream: closing","id":"tk3nsdso"}
+{"time":"2025-09-17T21:34:46.741446263+07:00","level":"INFO","msg":"handler: closed","stream_id":"tk3nsdso"}
+{"time":"2025-09-17T21:34:46.741537069+07:00","level":"INFO","msg":"sender: closed","stream_id":"tk3nsdso"}
+{"time":"2025-09-17T21:34:46.741552767+07:00","level":"INFO","msg":"stream: closed","id":"tk3nsdso"}

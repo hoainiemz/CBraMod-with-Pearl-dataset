@@ -1,0 +1,12 @@
+{"time":"2025-09-17T15:01:31.609744833+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T15:01:32.055695996+07:00","level":"INFO","msg":"stream: created new stream","id":"hydrb9rh"}
+{"time":"2025-09-17T15:01:32.055752585+07:00","level":"INFO","msg":"stream: started","id":"hydrb9rh"}
+{"time":"2025-09-17T15:01:32.055791135+07:00","level":"INFO","msg":"writer: started","stream_id":"hydrb9rh"}
+{"time":"2025-09-17T15:01:32.055863538+07:00","level":"INFO","msg":"handler: started","stream_id":"hydrb9rh"}
+{"time":"2025-09-17T15:01:32.055792421+07:00","level":"INFO","msg":"sender: started","stream_id":"hydrb9rh"}
+{"time":"2025-09-17T15:06:49.547773205+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000889007}],"total_operations":1}}
+{"time":"2025-09-17T15:06:50.44924576+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T15:06:50.808287319+07:00","level":"INFO","msg":"stream: closing","id":"hydrb9rh"}
+{"time":"2025-09-17T15:06:50.808322579+07:00","level":"INFO","msg":"handler: closed","stream_id":"hydrb9rh"}
+{"time":"2025-09-17T15:06:50.808443934+07:00","level":"INFO","msg":"sender: closed","stream_id":"hydrb9rh"}
+{"time":"2025-09-17T15:06:50.808474354+07:00","level":"INFO","msg":"stream: closed","id":"hydrb9rh"}

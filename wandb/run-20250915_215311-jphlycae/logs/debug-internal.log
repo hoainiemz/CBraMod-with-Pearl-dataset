@@ -1,0 +1,16 @@
+{"time":"2025-09-15T21:53:12.036697938+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_215311-jphlycae/logs/debug-core.log"}
+{"time":"2025-09-15T21:53:12.466475115+07:00","level":"INFO","msg":"created new stream","id":"jphlycae"}
+{"time":"2025-09-15T21:53:12.466522448+07:00","level":"INFO","msg":"stream: started","id":"jphlycae"}
+{"time":"2025-09-15T21:53:12.466547495+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:53:12.466559513+07:00","level":"INFO","msg":"sender: started","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:53:12.466608129+07:00","level":"INFO","msg":"handler: started","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:53:13.156800214+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-15T21:54:49.098926028+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-15T21:54:49.099011612+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-15T21:54:50.101351502+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.44204713,"progress":"28.1KB/28.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.183234868,"progress":"1.4KB/1.4KB"}],"total_operations":2}}
+{"time":"2025-09-15T21:54:50.233618097+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-15T21:54:50.600888247+07:00","level":"INFO","msg":"stream: closing","id":"jphlycae"}
+{"time":"2025-09-15T21:54:50.600931202+07:00","level":"INFO","msg":"handler: closed","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:54:50.600957851+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:54:50.600975447+07:00","level":"INFO","msg":"sender: closed","stream_id":"jphlycae"}
+{"time":"2025-09-15T21:54:50.601146841+07:00","level":"INFO","msg":"stream: closed","id":"jphlycae"}

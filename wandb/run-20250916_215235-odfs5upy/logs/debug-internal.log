@@ -1,0 +1,12 @@
+{"time":"2025-09-16T21:52:35.632325492+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-16T21:52:36.082347471+07:00","level":"INFO","msg":"stream: created new stream","id":"odfs5upy"}
+{"time":"2025-09-16T21:52:36.082424979+07:00","level":"INFO","msg":"stream: started","id":"odfs5upy"}
+{"time":"2025-09-16T21:52:36.082452444+07:00","level":"INFO","msg":"writer: started","stream_id":"odfs5upy"}
+{"time":"2025-09-16T21:52:36.082464193+07:00","level":"INFO","msg":"sender: started","stream_id":"odfs5upy"}
+{"time":"2025-09-16T21:52:36.082578601+07:00","level":"INFO","msg":"handler: started","stream_id":"odfs5upy"}
+{"time":"2025-09-16T21:55:26.45369219+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000654402}],"total_operations":1}}
+{"time":"2025-09-16T21:55:27.922021123+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-16T21:55:28.276315332+07:00","level":"INFO","msg":"stream: closing","id":"odfs5upy"}
+{"time":"2025-09-16T21:55:28.276355348+07:00","level":"INFO","msg":"handler: closed","stream_id":"odfs5upy"}
+{"time":"2025-09-16T21:55:28.276450578+07:00","level":"INFO","msg":"sender: closed","stream_id":"odfs5upy"}
+{"time":"2025-09-16T21:55:28.276477986+07:00","level":"INFO","msg":"stream: closed","id":"odfs5upy"}

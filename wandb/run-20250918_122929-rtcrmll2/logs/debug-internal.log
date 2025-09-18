@@ -1,0 +1,12 @@
+{"time":"2025-09-18T12:29:29.45750382+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T12:29:30.290018133+07:00","level":"INFO","msg":"stream: created new stream","id":"rtcrmll2"}
+{"time":"2025-09-18T12:29:30.290075505+07:00","level":"INFO","msg":"stream: started","id":"rtcrmll2"}
+{"time":"2025-09-18T12:29:30.290102089+07:00","level":"INFO","msg":"writer: started","stream_id":"rtcrmll2"}
+{"time":"2025-09-18T12:29:30.290117559+07:00","level":"INFO","msg":"handler: started","stream_id":"rtcrmll2"}
+{"time":"2025-09-18T12:29:30.290136599+07:00","level":"INFO","msg":"sender: started","stream_id":"rtcrmll2"}
+{"time":"2025-09-18T12:32:10.31296394+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000938869}],"total_operations":1}}
+{"time":"2025-09-18T12:32:11.619756791+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T12:32:12.007089578+07:00","level":"INFO","msg":"stream: closing","id":"rtcrmll2"}
+{"time":"2025-09-18T12:32:12.007122536+07:00","level":"INFO","msg":"handler: closed","stream_id":"rtcrmll2"}
+{"time":"2025-09-18T12:32:12.007219945+07:00","level":"INFO","msg":"sender: closed","stream_id":"rtcrmll2"}
+{"time":"2025-09-18T12:32:12.007238508+07:00","level":"INFO","msg":"stream: closed","id":"rtcrmll2"}

@@ -1,0 +1,22 @@
+3103 679 823
+4605
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 111, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 84, in main
+    model = model_for_pearl.Model(params).cuda()
+            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/models/model_for_pearl.py", line 110, in __init__
+    nn.Linear(19 * 30 * 200, 30 * 200),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aiotlab/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 112, in __init__
+    self.reset_parameters()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/aiotlab/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 118, in reset_parameters
+    init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aiotlab/miniconda3/lib/python3.13/site-packages/torch/nn/init.py", line 589, in kaiming_uniform_
+    return tensor.uniform_(-bound, bound, generator=generator)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

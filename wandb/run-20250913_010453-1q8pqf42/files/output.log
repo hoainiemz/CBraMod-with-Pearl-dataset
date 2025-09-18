@@ -1,0 +1,14 @@
+Namespace(seed=3407, cuda=0, epochs=20, batch_size=64, lr=0.0003, weight_decay=0.05, optimizer='AdamW', clip_value=1, dropout=0.1, classifier='all_patch_reps', downstream_dataset='PEARL', datasets_dir='/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl', num_of_classes=2, model_dir='./data/wjq/models_weights/Big/BigFaced', num_workers=16, label_smoothing=0.1, multi_lr=False, frozen=False, use_pretrained_weights=True, foundation_dir='pretrained_weights/pretrained_weights.pth')
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+3492 1113
+4605
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 109, in <module>
+    main()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 84, in main
+    t = Trainer(params, data_loader, model)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_trainer.py", line 20, in __init__
+    self.val_eval = Evaluator(params, self.data_loader['val'])
+                                      ~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'val'

@@ -1,0 +1,12 @@
+{"time":"2025-09-14T13:48:19.39959239+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-14T13:48:19.931088846+07:00","level":"INFO","msg":"stream: created new stream","id":"pyqepi16"}
+{"time":"2025-09-14T13:48:19.931162307+07:00","level":"INFO","msg":"stream: started","id":"pyqepi16"}
+{"time":"2025-09-14T13:48:19.931212509+07:00","level":"INFO","msg":"writer: started","stream_id":"pyqepi16"}
+{"time":"2025-09-14T13:48:19.931261243+07:00","level":"INFO","msg":"sender: started","stream_id":"pyqepi16"}
+{"time":"2025-09-14T13:48:19.931214285+07:00","level":"INFO","msg":"handler: started","stream_id":"pyqepi16"}
+{"time":"2025-09-14T13:51:46.414955375+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T13:51:46.490547126+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 18-19, summary, console lines 236-251","runtime_seconds":0.075303091}],"total_operations":1}}
+{"time":"2025-09-14T13:51:46.769635937+07:00","level":"INFO","msg":"stream: closing","id":"pyqepi16"}
+{"time":"2025-09-14T13:51:46.769673481+07:00","level":"INFO","msg":"handler: closed","stream_id":"pyqepi16"}
+{"time":"2025-09-14T13:51:46.769806632+07:00","level":"INFO","msg":"sender: closed","stream_id":"pyqepi16"}
+{"time":"2025-09-14T13:51:46.769858814+07:00","level":"INFO","msg":"stream: closed","id":"pyqepi16"}

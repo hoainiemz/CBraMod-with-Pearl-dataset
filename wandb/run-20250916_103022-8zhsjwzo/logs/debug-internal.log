@@ -1,0 +1,15 @@
+{"time":"2025-09-16T10:30:22.509579203+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250916_103022-8zhsjwzo/logs/debug-core.log"}
+{"time":"2025-09-16T10:30:22.958728113+07:00","level":"INFO","msg":"created new stream","id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:22.958852442+07:00","level":"INFO","msg":"stream: started","id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:22.958934058+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:22.958966321+07:00","level":"INFO","msg":"handler: started","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:22.958971742+07:00","level":"INFO","msg":"sender: started","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:23.295924913+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-16T10:30:25.156744772+07:00","level":"INFO","msg":"stream: closing","id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:25.156795913+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-16T10:30:25.156905897+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-16T10:30:26.453421892+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-16T10:30:26.859301899+07:00","level":"INFO","msg":"handler: closed","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:26.859390602+07:00","level":"INFO","msg":"sender: closed","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:26.859390718+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8zhsjwzo"}
+{"time":"2025-09-16T10:30:26.859589997+07:00","level":"INFO","msg":"stream: closed","id":"8zhsjwzo"}

@@ -1,0 +1,70 @@
+{
+  "os": "Linux-6.8.0-65-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.13.2",
+  "startedAt": "2025-09-14T04:56:57.450786Z",
+  "args": [
+    "--epochs",
+    "20",
+    "--batch_size",
+    "64",
+    "--lr",
+    "3e-4",
+    "--downstream_dataset",
+    "PEARL",
+    "--datasets_dir",
+    "/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl",
+    "--num_of_classes",
+    "2",
+    "--num_folds",
+    "0"
+  ],
+  "program": "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py",
+  "codePath": "finetune_kfold_pearl.py",
+  "git": {
+    "remote": "https://github.com/wjq-learning/CBraMod.git",
+    "commit": "7b463f69cd560205b5d4d061bc8f3a2b5906eba1"
+  },
+  "email": "nam.th180805@gmail.com",
+  "root": "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod",
+  "host": "gpus-Super-Server",
+  "executable": "/home/aiotlab/miniconda3/bin/python",
+  "codePathLocal": "finetune_kfold_pearl.py",
+  "cpu_count": 20,
+  "cpu_count_logical": 40,
+  "gpu": "NVIDIA A30",
+  "gpu_count": 3,
+  "disk": {
+    "/": {
+      "total": "943412031488",
+      "used": "670265061376"
+    }
+  },
+  "memory": {
+    "total": "134794272768"
+  },
+  "cpu": {
+    "count": 20,
+    "countLogical": 40
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A30",
+      "memoryTotal": "25769803776",
+      "cudaCores": 3584,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A30",
+      "memoryTotal": "25769803776",
+      "cudaCores": 3584,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A30",
+      "memoryTotal": "25769803776",
+      "cudaCores": 3584,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

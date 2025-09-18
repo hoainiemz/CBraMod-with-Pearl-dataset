@@ -1,0 +1,80 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            oxue54agc8hrb0snd83l3ag7gr034gbp:
+                codePath: hyper_optuna.py
+                codePathLocal: hyper_optuna.py
+                cpu_count: 20
+                cpu_count_logical: 40
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "943412031488"
+                        used: "819523284992"
+                email: nam.leo1805@gmail.com
+                executable: /mnt/disk1/aiotlab/envs/hoainiem/bin/python
+                git:
+                    commit: 7b463f69cd560205b5d4d061bc8f3a2b5906eba1
+                    remote: https://github.com/wjq-learning/CBraMod.git
+                gpu: NVIDIA A30
+                gpu_count: 3
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-97533177-ae5d-752f-8fac-73c43a1a67cc
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-b71aa699-b956-12eb-ded3-7590ec6c9937
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-1ae02fa8-11a1-fd0d-1711-434d9c42d9ef
+                host: gpus-Super-Server
+                memory:
+                    total: "134794272768"
+                os: Linux-6.8.0-65-generic-x86_64-with-glibc2.35
+                program: /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py
+                python: CPython 3.12.11
+                root: /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod
+                startedAt: "2025-08-29T17:03:20.137723Z"
+                writerId: oxue54agc8hrb0snd83l3ag7gr034gbp
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 5
+                - 30
+                - 35
+                - 51
+                - 53
+            "2":
+                - 1
+                - 5
+                - 30
+                - 35
+                - 51
+                - 53
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.21.1
+            "10":
+                - 20
+            "12": 0.21.1
+            "13": linux-x86_64
+clip_value:
+    value: 1.9720148055974538
+dropout:
+    value: 0.1882504134072541
+lr:
+    value: 0.00021415629713178024
+weight_decay:
+    value: 0.0018937637017045772

@@ -1,0 +1,12 @@
+{"time":"2025-09-17T17:15:56.494916493+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T17:15:56.930688214+07:00","level":"INFO","msg":"stream: created new stream","id":"pysk0fyh"}
+{"time":"2025-09-17T17:15:56.930720315+07:00","level":"INFO","msg":"stream: started","id":"pysk0fyh"}
+{"time":"2025-09-17T17:15:56.930731141+07:00","level":"INFO","msg":"writer: started","stream_id":"pysk0fyh"}
+{"time":"2025-09-17T17:15:56.930742588+07:00","level":"INFO","msg":"handler: started","stream_id":"pysk0fyh"}
+{"time":"2025-09-17T17:15:56.930784778+07:00","level":"INFO","msg":"sender: started","stream_id":"pysk0fyh"}
+{"time":"2025-09-17T17:20:24.648434609+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001356791}],"total_operations":1}}
+{"time":"2025-09-17T17:20:26.222510639+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T17:20:26.573518445+07:00","level":"INFO","msg":"stream: closing","id":"pysk0fyh"}
+{"time":"2025-09-17T17:20:26.573551711+07:00","level":"INFO","msg":"handler: closed","stream_id":"pysk0fyh"}
+{"time":"2025-09-17T17:20:26.573643715+07:00","level":"INFO","msg":"sender: closed","stream_id":"pysk0fyh"}
+{"time":"2025-09-17T17:20:26.573658502+07:00","level":"INFO","msg":"stream: closed","id":"pysk0fyh"}

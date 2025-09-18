@@ -1,0 +1,13 @@
+{"time":"2025-08-29T02:53:06.587146463+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-29T02:53:07.019610274+07:00","level":"INFO","msg":"stream: created new stream","id":"vj9yt0hz"}
+{"time":"2025-08-29T02:53:07.019672408+07:00","level":"INFO","msg":"stream: started","id":"vj9yt0hz"}
+{"time":"2025-08-29T02:53:07.019696274+07:00","level":"INFO","msg":"handler: started","stream_id":"vj9yt0hz"}
+{"time":"2025-08-29T02:53:07.019703392+07:00","level":"INFO","msg":"sender: started","stream_id":"vj9yt0hz"}
+{"time":"2025-08-29T02:53:07.019745624+07:00","level":"INFO","msg":"writer: started","stream_id":"vj9yt0hz"}
+{"time":"2025-08-29T02:59:23.344680614+07:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hoainiem-hanoi-university-of-science-and-technology/finetune-50e-optuna-asha/vj9yt0hz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-29T03:09:38.990939408+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.632079157,"progress":"49.1KB/49.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.365762204,"progress":"2.7KB/2.7KB"}],"total_operations":2}}
+{"time":"2025-08-29T03:09:39.696447003+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-29T03:09:40.089679107+07:00","level":"INFO","msg":"stream: closing","id":"vj9yt0hz"}
+{"time":"2025-08-29T03:09:40.089710901+07:00","level":"INFO","msg":"handler: closed","stream_id":"vj9yt0hz"}
+{"time":"2025-08-29T03:09:40.089807992+07:00","level":"INFO","msg":"sender: closed","stream_id":"vj9yt0hz"}
+{"time":"2025-08-29T03:09:40.089823619+07:00","level":"INFO","msg":"stream: closed","id":"vj9yt0hz"}

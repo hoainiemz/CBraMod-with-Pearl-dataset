@@ -1,0 +1,12 @@
+{"time":"2025-09-16T20:47:15.46074375+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-16T20:47:15.910802983+07:00","level":"INFO","msg":"stream: created new stream","id":"yynbs5vu"}
+{"time":"2025-09-16T20:47:15.910851841+07:00","level":"INFO","msg":"stream: started","id":"yynbs5vu"}
+{"time":"2025-09-16T20:47:15.910867534+07:00","level":"INFO","msg":"handler: started","stream_id":"yynbs5vu"}
+{"time":"2025-09-16T20:47:15.910889973+07:00","level":"INFO","msg":"sender: started","stream_id":"yynbs5vu"}
+{"time":"2025-09-16T20:47:15.910916075+07:00","level":"INFO","msg":"writer: started","stream_id":"yynbs5vu"}
+{"time":"2025-09-16T20:50:08.717598358+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.002126787}],"total_operations":1}}
+{"time":"2025-09-16T20:50:09.582110737+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-16T20:50:09.958954531+07:00","level":"INFO","msg":"stream: closing","id":"yynbs5vu"}
+{"time":"2025-09-16T20:50:09.95899303+07:00","level":"INFO","msg":"handler: closed","stream_id":"yynbs5vu"}
+{"time":"2025-09-16T20:50:09.95907819+07:00","level":"INFO","msg":"sender: closed","stream_id":"yynbs5vu"}
+{"time":"2025-09-16T20:50:09.959094471+07:00","level":"INFO","msg":"stream: closed","id":"yynbs5vu"}

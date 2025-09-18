@@ -1,0 +1,12 @@
+{"time":"2025-09-18T00:53:02.016463853+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T00:53:02.451735552+07:00","level":"INFO","msg":"stream: created new stream","id":"tyuzz8st"}
+{"time":"2025-09-18T00:53:02.451810812+07:00","level":"INFO","msg":"stream: started","id":"tyuzz8st"}
+{"time":"2025-09-18T00:53:02.45184286+07:00","level":"INFO","msg":"sender: started","stream_id":"tyuzz8st"}
+{"time":"2025-09-18T00:53:02.451838846+07:00","level":"INFO","msg":"writer: started","stream_id":"tyuzz8st"}
+{"time":"2025-09-18T00:53:02.451914192+07:00","level":"INFO","msg":"handler: started","stream_id":"tyuzz8st"}
+{"time":"2025-09-18T00:57:07.686186015+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001098253}],"total_operations":1}}
+{"time":"2025-09-18T00:57:09.142806965+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T00:57:09.517793255+07:00","level":"INFO","msg":"stream: closing","id":"tyuzz8st"}
+{"time":"2025-09-18T00:57:09.51782665+07:00","level":"INFO","msg":"handler: closed","stream_id":"tyuzz8st"}
+{"time":"2025-09-18T00:57:09.517926511+07:00","level":"INFO","msg":"sender: closed","stream_id":"tyuzz8st"}
+{"time":"2025-09-18T00:57:09.517965651+07:00","level":"INFO","msg":"stream: closed","id":"tyuzz8st"}

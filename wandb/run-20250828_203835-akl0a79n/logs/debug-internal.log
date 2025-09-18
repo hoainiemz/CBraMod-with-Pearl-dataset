@@ -1,0 +1,7 @@
+{"time":"2025-08-28T20:38:35.78071226+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250828_203835-akl0a79n/logs/debug-core.log"}
+{"time":"2025-08-28T20:38:36.23882291+07:00","level":"INFO","msg":"created new stream","id":"akl0a79n"}
+{"time":"2025-08-28T20:38:36.23889013+07:00","level":"INFO","msg":"stream: started","id":"akl0a79n"}
+{"time":"2025-08-28T20:38:36.238936358+07:00","level":"INFO","msg":"sender: started","stream_id":"akl0a79n"}
+{"time":"2025-08-28T20:38:36.23894414+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"akl0a79n"}
+{"time":"2025-08-28T20:38:36.23904617+07:00","level":"INFO","msg":"handler: started","stream_id":"akl0a79n"}
+{"time":"2025-08-28T20:38:36.609865067+07:00","level":"INFO","msg":"Starting system monitor"}

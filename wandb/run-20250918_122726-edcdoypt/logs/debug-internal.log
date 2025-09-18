@@ -1,0 +1,12 @@
+{"time":"2025-09-18T12:27:26.930540298+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T12:27:27.969751728+07:00","level":"INFO","msg":"stream: created new stream","id":"edcdoypt"}
+{"time":"2025-09-18T12:27:27.969793822+07:00","level":"INFO","msg":"stream: started","id":"edcdoypt"}
+{"time":"2025-09-18T12:27:27.969821319+07:00","level":"INFO","msg":"writer: started","stream_id":"edcdoypt"}
+{"time":"2025-09-18T12:27:27.969834344+07:00","level":"INFO","msg":"handler: started","stream_id":"edcdoypt"}
+{"time":"2025-09-18T12:27:27.96988837+07:00","level":"INFO","msg":"sender: started","stream_id":"edcdoypt"}
+{"time":"2025-09-18T12:29:59.218702862+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 17-18, summary, console lines 178-191","runtime_seconds":0.343672718},{"desc":"updating run metadata","runtime_seconds":0.00107289}],"total_operations":2}}
+{"time":"2025-09-18T12:30:00.09265429+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T12:30:00.526476999+07:00","level":"INFO","msg":"stream: closing","id":"edcdoypt"}
+{"time":"2025-09-18T12:30:00.526509857+07:00","level":"INFO","msg":"handler: closed","stream_id":"edcdoypt"}
+{"time":"2025-09-18T12:30:00.52660095+07:00","level":"INFO","msg":"sender: closed","stream_id":"edcdoypt"}
+{"time":"2025-09-18T12:30:00.526648198+07:00","level":"INFO","msg":"stream: closed","id":"edcdoypt"}

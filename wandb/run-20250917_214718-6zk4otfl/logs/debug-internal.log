@@ -1,0 +1,23 @@
+{"time":"2025-09-17T21:47:18.808410006+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T21:47:19.267375595+07:00","level":"INFO","msg":"stream: created new stream","id":"6zk4otfl"}
+{"time":"2025-09-17T21:47:19.267449141+07:00","level":"INFO","msg":"stream: started","id":"6zk4otfl"}
+{"time":"2025-09-17T21:47:19.267482597+07:00","level":"INFO","msg":"sender: started","stream_id":"6zk4otfl"}
+{"time":"2025-09-17T21:47:19.267473101+07:00","level":"INFO","msg":"writer: started","stream_id":"6zk4otfl"}
+{"time":"2025-09-17T21:47:19.267578504+07:00","level":"INFO","msg":"handler: started","stream_id":"6zk4otfl"}
+{"time":"2025-09-17T21:50:31.848759918+07:00","level":"INFO","msg":"stream: closing","id":"6zk4otfl"}
+{"time":"2025-09-17T21:50:34.764153694+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-09-17T21:51:06.937230906+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-17T21:51:41.034313363+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-09-17T21:52:19.723594805+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-09-17T21:52:38.144417045+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.145635015+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.147335868+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.147365364+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.147378714+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.147407054+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.147420326+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:38.14743129+07:00","level":"ERROR","msg":"sender: sendSystemMetrics called after exit"}
+{"time":"2025-09-17T21:52:39.522166027+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T21:52:40.314926301+07:00","level":"INFO","msg":"handler: closed","stream_id":"6zk4otfl"}
+{"time":"2025-09-17T21:52:40.315062444+07:00","level":"INFO","msg":"sender: closed","stream_id":"6zk4otfl"}
+{"time":"2025-09-17T21:52:40.315080447+07:00","level":"INFO","msg":"stream: closed","id":"6zk4otfl"}

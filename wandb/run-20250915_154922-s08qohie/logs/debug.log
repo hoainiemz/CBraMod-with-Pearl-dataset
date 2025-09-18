@@ -1,0 +1,41 @@
+2025-09-15 15:49:22,592 INFO    MainThread:2256456 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_154922-s08qohie/logs/debug.log
+2025-09-15 15:49:22,592 INFO    MainThread:2256456 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_154922-s08qohie/logs/debug-internal.log
+2025-09-15 15:49:22,592 INFO    MainThread:2256456 [wandb_init.py:init():830] calling init triggers
+2025-09-15 15:49:22,593 INFO    MainThread:2256456 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'project_name': 'EEG_HUST_MULTIMODALITY', 'modality_mode': 'multi', 'num_folds': -1, 'seed': 3407, 'cuda': 0, 'epochs': 20, 'batch_size': 16, 'lr': 0.0003, 'weight_decay': 0.05, 'optimizer': 'AdamW', 'clip_value': 1, 'dropout': 0.4, 'classifier': 'all_patch_reps_twolayer', 'downstream_dataset': 'PEARL', 'datasets_dir': '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl_30s/fold_0', 'num_of_classes': 2, 'model_dir': './data/wjq/models_weights/Big/BigFaced', 'num_workers': 16, 'label_smoothing': 0.1, 'multi_lr': False, 'frozen': False, 'use_pretrained_weights': True, 'foundation_dir': 'pretrained_weights/pretrained_weights.pth', '_wandb': {}}
+2025-09-15 15:49:22,593 INFO    MainThread:2256456 [wandb_init.py:init():871] starting backend
+2025-09-15 15:49:22,593 INFO    MainThread:2256456 [wandb_init.py:init():874] sending inform_init request
+2025-09-15 15:49:22,595 INFO    MainThread:2256456 [wandb_init.py:init():882] backend started and connected
+2025-09-15 15:49:22,599 INFO    MainThread:2256456 [wandb_init.py:init():953] updated telemetry
+2025-09-15 15:49:22,608 INFO    MainThread:2256456 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-09-15 15:49:23,519 WARNING MainThread:2256456 [wandb_init.py:init():1585] [no run ID] interrupted
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1581, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 996, in init
+    result = wait_with_progress(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 70, in wait_all_with_progress
+    return _wait_handles(handle_list, timeout=progress_after)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 110, in _wait_handles
+    results.append(handle.wait_or(timeout=remaining_timeout))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/mailbox/mailbox_handle.py", line 118, in wait_or
+    return self._fn(self._handle.wait_or(timeout=timeout))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/wandb/sdk/mailbox/response_handle.py", line 84, in wait_or
+    if not self._event.wait(timeout=timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2025-09-15 15:49:23,584 INFO    MsgRouterThr:2256456 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 2 handles.

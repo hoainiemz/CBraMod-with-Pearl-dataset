@@ -1,0 +1,16 @@
+{"time":"2025-09-15T20:00:55.213842104+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_200054-b1ji8cv1/logs/debug-core.log"}
+{"time":"2025-09-15T20:00:55.620840843+07:00","level":"INFO","msg":"created new stream","id":"b1ji8cv1"}
+{"time":"2025-09-15T20:00:55.620900079+07:00","level":"INFO","msg":"stream: started","id":"b1ji8cv1"}
+{"time":"2025-09-15T20:00:55.620926159+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:00:55.620937703+07:00","level":"INFO","msg":"handler: started","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:00:55.620995969+07:00","level":"INFO","msg":"sender: started","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:00:55.961387495+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-15T20:02:45.763682579+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-15T20:02:45.763758789+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-15T20:02:46.765965119+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.453922736,"progress":"375B/375B"},{"desc":"uploading output.log","runtime_seconds":0.453907711,"progress":"29.3KB/29.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.234500108,"progress":"1.5KB/1.5KB"}],"total_operations":3}}
+{"time":"2025-09-15T20:02:47.314763202+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-15T20:02:47.680080605+07:00","level":"INFO","msg":"stream: closing","id":"b1ji8cv1"}
+{"time":"2025-09-15T20:02:47.680113864+07:00","level":"INFO","msg":"handler: closed","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:02:47.680132937+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:02:47.680152195+07:00","level":"INFO","msg":"sender: closed","stream_id":"b1ji8cv1"}
+{"time":"2025-09-15T20:02:47.680247849+07:00","level":"INFO","msg":"stream: closed","id":"b1ji8cv1"}

@@ -1,0 +1,12 @@
+{"time":"2025-09-14T14:40:40.012855871+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-14T14:40:40.551926501+07:00","level":"INFO","msg":"stream: created new stream","id":"fed15hyv"}
+{"time":"2025-09-14T14:40:40.551964109+07:00","level":"INFO","msg":"stream: started","id":"fed15hyv"}
+{"time":"2025-09-14T14:40:40.551994641+07:00","level":"INFO","msg":"writer: started","stream_id":"fed15hyv"}
+{"time":"2025-09-14T14:40:40.552040859+07:00","level":"INFO","msg":"sender: started","stream_id":"fed15hyv"}
+{"time":"2025-09-14T14:40:40.552106779+07:00","level":"INFO","msg":"handler: started","stream_id":"fed15hyv"}
+{"time":"2025-09-14T14:43:59.905178808+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.722284473,"progress":"29.0KB/29.0KB"}],"total_operations":1}}
+{"time":"2025-09-14T14:44:00.353180643+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T14:44:00.741482011+07:00","level":"INFO","msg":"stream: closing","id":"fed15hyv"}
+{"time":"2025-09-14T14:44:00.741499545+07:00","level":"INFO","msg":"handler: closed","stream_id":"fed15hyv"}
+{"time":"2025-09-14T14:44:00.741562031+07:00","level":"INFO","msg":"sender: closed","stream_id":"fed15hyv"}
+{"time":"2025-09-14T14:44:00.741583761+07:00","level":"INFO","msg":"stream: closed","id":"fed15hyv"}

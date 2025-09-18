@@ -1,0 +1,18 @@
+493 127 132
+752
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 111, in <module>
+    main()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 84, in main
+    model = model_for_pearl.Model(params).cuda()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/models/model_for_pearl.py", line 43, in __init__
+    self.backbone.load_state_dict(torch.load(param.foundation_dir, map_location='cpu'))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/torch/serialization.py", line 1491, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/torch/serialization.py", line 771, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,12 @@
+{"time":"2025-09-18T00:25:36.59913993+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T00:25:37.028814025+07:00","level":"INFO","msg":"stream: created new stream","id":"qp16wdbb"}
+{"time":"2025-09-18T00:25:37.028877518+07:00","level":"INFO","msg":"stream: started","id":"qp16wdbb"}
+{"time":"2025-09-18T00:25:37.028891012+07:00","level":"INFO","msg":"handler: started","stream_id":"qp16wdbb"}
+{"time":"2025-09-18T00:25:37.028906674+07:00","level":"INFO","msg":"sender: started","stream_id":"qp16wdbb"}
+{"time":"2025-09-18T00:25:37.028943673+07:00","level":"INFO","msg":"writer: started","stream_id":"qp16wdbb"}
+{"time":"2025-09-18T00:29:35.515623785+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000509678}],"total_operations":1}}
+{"time":"2025-09-18T00:29:36.911086428+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T00:29:37.26707804+07:00","level":"INFO","msg":"stream: closing","id":"qp16wdbb"}
+{"time":"2025-09-18T00:29:37.267106464+07:00","level":"INFO","msg":"handler: closed","stream_id":"qp16wdbb"}
+{"time":"2025-09-18T00:29:37.267216911+07:00","level":"INFO","msg":"sender: closed","stream_id":"qp16wdbb"}
+{"time":"2025-09-18T00:29:37.26723606+07:00","level":"INFO","msg":"stream: closed","id":"qp16wdbb"}

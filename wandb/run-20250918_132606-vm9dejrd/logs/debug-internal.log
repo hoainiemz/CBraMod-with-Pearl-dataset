@@ -1,0 +1,12 @@
+{"time":"2025-09-18T13:26:06.930232279+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T13:26:07.472146546+07:00","level":"INFO","msg":"stream: created new stream","id":"vm9dejrd"}
+{"time":"2025-09-18T13:26:07.47224016+07:00","level":"INFO","msg":"stream: started","id":"vm9dejrd"}
+{"time":"2025-09-18T13:26:07.472266546+07:00","level":"INFO","msg":"writer: started","stream_id":"vm9dejrd"}
+{"time":"2025-09-18T13:26:07.47230796+07:00","level":"INFO","msg":"sender: started","stream_id":"vm9dejrd"}
+{"time":"2025-09-18T13:26:07.472320834+07:00","level":"INFO","msg":"handler: started","stream_id":"vm9dejrd"}
+{"time":"2025-09-18T13:32:59.175644514+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001225081}],"total_operations":1}}
+{"time":"2025-09-18T13:33:00.11865429+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T13:33:00.573804017+07:00","level":"INFO","msg":"stream: closing","id":"vm9dejrd"}
+{"time":"2025-09-18T13:33:00.573837746+07:00","level":"INFO","msg":"handler: closed","stream_id":"vm9dejrd"}
+{"time":"2025-09-18T13:33:00.573968226+07:00","level":"INFO","msg":"sender: closed","stream_id":"vm9dejrd"}
+{"time":"2025-09-18T13:33:00.5739868+07:00","level":"INFO","msg":"stream: closed","id":"vm9dejrd"}

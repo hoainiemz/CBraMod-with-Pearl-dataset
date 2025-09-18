@@ -1,0 +1,12 @@
+{"time":"2025-08-29T12:16:55.856140531+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-29T12:16:56.322648474+07:00","level":"INFO","msg":"stream: created new stream","id":"3jbh3kmt"}
+{"time":"2025-08-29T12:16:56.322700585+07:00","level":"INFO","msg":"stream: started","id":"3jbh3kmt"}
+{"time":"2025-08-29T12:16:56.322716704+07:00","level":"INFO","msg":"writer: started","stream_id":"3jbh3kmt"}
+{"time":"2025-08-29T12:16:56.322731617+07:00","level":"INFO","msg":"sender: started","stream_id":"3jbh3kmt"}
+{"time":"2025-08-29T12:16:56.322791591+07:00","level":"INFO","msg":"handler: started","stream_id":"3jbh3kmt"}
+{"time":"2025-08-29T12:28:46.920069276+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.699057821,"progress":"55.4KB/55.4KB"},{"desc":"uploading config.yaml","runtime_seconds":0.366103816,"progress":"2.6KB/2.6KB"}],"total_operations":2}}
+{"time":"2025-08-29T12:28:47.395771041+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-29T12:28:47.768801059+07:00","level":"INFO","msg":"stream: closing","id":"3jbh3kmt"}
+{"time":"2025-08-29T12:28:47.768835386+07:00","level":"INFO","msg":"handler: closed","stream_id":"3jbh3kmt"}
+{"time":"2025-08-29T12:28:47.768947597+07:00","level":"INFO","msg":"sender: closed","stream_id":"3jbh3kmt"}
+{"time":"2025-08-29T12:28:47.76899239+07:00","level":"INFO","msg":"stream: closed","id":"3jbh3kmt"}

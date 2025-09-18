@@ -1,0 +1,632 @@
+2025-09-17 21:43:03,219 INFO    MainThread:2568674 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250917_214303-ljga0d32/logs/debug.log
+2025-09-17 21:43:03,220 INFO    MainThread:2568674 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250917_214303-ljga0d32/logs/debug-internal.log
+2025-09-17 21:43:03,220 INFO    MainThread:2568674 [wandb_init.py:init():813] calling init triggers
+2025-09-17 21:43:03,220 INFO    MainThread:2568674 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'project_name': 'EEG_HUST_MULTIMODALITY', 'modality_mode': 'multi_attend', 'num_folds': -1, 'seed': 3407, 'cuda': 0, 'epochs': 20, 'batch_size': 16, 'lr': 0.0005, 'weight_decay': 0.05, 'optimizer': 'AdamW', 'clip_value': 1, 'dropout': 0.1, 'classifier': 'all_patch_reps_twolayer', 'downstream_dataset': 'PEARL', 'datasets_dir': '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl_30s/fold_0', 'num_of_classes': 2, 'model_dir': './data/wjq/models_weights/Big/BigFaced', 'num_workers': 16, 'label_smoothing': 0.1, 'multi_lr': False, 'frozen': False, 'use_pretrained_weights': True, 'foundation_dir': '/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/pretrained_weights/pretrained_weights.pth', '_wandb': {}}
+2025-09-17 21:43:03,220 INFO    MainThread:2568674 [wandb_init.py:init():854] starting backend
+2025-09-17 21:43:03,220 INFO    MainThread:2568674 [wandb_init.py:init():857] sending inform_init request
+2025-09-17 21:43:03,221 INFO    MainThread:2568674 [wandb_init.py:init():865] backend started and connected
+2025-09-17 21:43:03,225 INFO    MainThread:2568674 [wandb_init.py:init():936] updated telemetry
+2025-09-17 21:43:03,233 INFO    MainThread:2568674 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-09-17 21:43:04,038 INFO    MainThread:2568674 [wandb_init.py:init():1011] starting run threads in backend
+2025-09-17 21:43:04,196 INFO    MainThread:2568674 [wandb_run.py:_console_start():2506] atexit reg
+2025-09-17 21:43:04,196 INFO    MainThread:2568674 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-09-17 21:43:04,196 INFO    MainThread:2568674 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-09-17 21:43:04,196 INFO    MainThread:2568674 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-09-17 21:43:04,197 INFO    MainThread:2568674 [wandb_init.py:init():1049] run started, returning control to user process
+2025-09-17 21:44:07,291 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,299 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,300 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,309 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,328 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,328 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,329 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,330 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,331 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,331 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,332 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,335 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,335 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,336 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,336 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,337 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,338 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,338 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,339 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,339 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,340 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,341 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,341 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,342 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,342 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,343 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,343 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,344 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,345 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,345 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,345 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,346 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,346 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,346 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,347 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,347 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,347 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,348 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,349 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,349 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,349 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,350 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,350 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,351 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,351 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,351 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,352 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,352 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,352 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,353 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,353 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,353 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,354 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,355 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,360 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-17 21:44:07,387 ERROR   wandb-AsyncioManager-main:2568674 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/mnt/disk1/aiotlab/envs/cbramod/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

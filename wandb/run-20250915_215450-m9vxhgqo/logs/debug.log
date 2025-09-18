@@ -1,0 +1,24 @@
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_215450-m9vxhgqo/logs/debug.log
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250915_215450-m9vxhgqo/logs/debug-internal.log
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:init():852] calling init triggers
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'project_name': 'EEG_HUST_MONOMODALITY', 'modality_mode': 'mono', 'num_folds': -1, 'seed': 3407, 'cuda': 0, 'epochs': 20, 'batch_size': 16, 'lr': 0.0003, 'weight_decay': 0.05, 'optimizer': 'AdamW', 'clip_value': 1, 'dropout': 0.1, 'classifier': 'all_patch_reps_onelayer', 'downstream_dataset': 'PEARL', 'datasets_dir': '/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl_30s/fold_1', 'num_of_classes': 2, 'model_dir': './data/wjq/models_weights/Big/BigFaced', 'num_workers': 16, 'label_smoothing': 0.1, 'multi_lr': False, 'frozen': False, 'use_pretrained_weights': True, 'foundation_dir': 'pretrained_weights/pretrained_weights.pth', '_wandb': {}}
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:init():893] starting backend
+2025-09-15 21:54:50,629 INFO    MainThread:2627319 [wandb_init.py:init():897] sending inform_init request
+2025-09-15 21:54:50,632 INFO    MainThread:2627319 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-09-15 21:54:50,632 INFO    MainThread:2627319 [wandb_init.py:init():907] backend started and connected
+2025-09-15 21:54:50,640 INFO    MainThread:2627319 [wandb_init.py:init():1005] updated telemetry
+2025-09-15 21:54:50,650 INFO    MainThread:2627319 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-09-15 21:54:51,359 INFO    MainThread:2627319 [wandb_init.py:init():1104] starting run threads in backend
+2025-09-15 21:54:51,905 INFO    MainThread:2627319 [wandb_run.py:_console_start():2573] atexit reg
+2025-09-15 21:54:51,905 INFO    MainThread:2627319 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-09-15 21:54:51,905 INFO    MainThread:2627319 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-09-15 21:54:51,906 INFO    MainThread:2627319 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-09-15 21:54:51,906 INFO    MainThread:2627319 [wandb_init.py:init():1150] run started, returning control to user process
+2025-09-15 21:56:30,425 INFO    MainThread:2627319 [wandb_run.py:_finish():2321] finishing run hoainiem-hanoi-university-of-science-and-technology/EEG_HUST_MONOMODALITY/m9vxhgqo
+2025-09-15 21:56:30,426 INFO    MainThread:2627319 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-09-15 21:56:30,426 INFO    MainThread:2627319 [wandb_run.py:_restore():2520] restore
+2025-09-15 21:56:30,426 INFO    MainThread:2627319 [wandb_run.py:_restore():2526] restore done
+2025-09-15 21:56:31,967 INFO    MainThread:2627319 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-09-15 21:56:31,968 INFO    MainThread:2627319 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-09-15 21:56:31,969 INFO    MainThread:2627319 [wandb_run.py:_footer_sync_info():4149] logging synced files

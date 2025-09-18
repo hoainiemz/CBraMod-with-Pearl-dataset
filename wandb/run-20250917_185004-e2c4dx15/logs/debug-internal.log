@@ -1,0 +1,15 @@
+{"time":"2025-09-17T18:50:04.729001462+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/wandb/run-20250917_185004-e2c4dx15/logs/debug-core.log"}
+{"time":"2025-09-17T18:50:05.164878454+07:00","level":"INFO","msg":"created new stream","id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:05.164943127+07:00","level":"INFO","msg":"stream: started","id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:05.164961794+07:00","level":"INFO","msg":"sender: started","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:05.164977825+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:05.165011521+07:00","level":"INFO","msg":"handler: started","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:05.487622978+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-17T18:50:06.219943934+07:00","level":"INFO","msg":"stream: closing","id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:06.220013414+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-17T18:50:06.220097889+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-17T18:50:08.091385037+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T18:50:08.513776792+07:00","level":"INFO","msg":"handler: closed","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:08.513821079+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:08.513857405+07:00","level":"INFO","msg":"sender: closed","stream_id":"e2c4dx15"}
+{"time":"2025-09-17T18:50:08.513932359+07:00","level":"INFO","msg":"stream: closed","id":"e2c4dx15"}

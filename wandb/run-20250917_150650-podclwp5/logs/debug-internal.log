@@ -1,0 +1,12 @@
+{"time":"2025-09-17T15:06:50.854755505+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T15:06:51.272595984+07:00","level":"INFO","msg":"stream: created new stream","id":"podclwp5"}
+{"time":"2025-09-17T15:06:51.272642565+07:00","level":"INFO","msg":"stream: started","id":"podclwp5"}
+{"time":"2025-09-17T15:06:51.272671562+07:00","level":"INFO","msg":"writer: started","stream_id":"podclwp5"}
+{"time":"2025-09-17T15:06:51.272688731+07:00","level":"INFO","msg":"sender: started","stream_id":"podclwp5"}
+{"time":"2025-09-17T15:06:51.272778383+07:00","level":"INFO","msg":"handler: started","stream_id":"podclwp5"}
+{"time":"2025-09-17T15:12:17.011151756+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000717365}],"total_operations":1}}
+{"time":"2025-09-17T15:12:18.584827497+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T15:12:18.953948172+07:00","level":"INFO","msg":"stream: closing","id":"podclwp5"}
+{"time":"2025-09-17T15:12:18.953986216+07:00","level":"INFO","msg":"handler: closed","stream_id":"podclwp5"}
+{"time":"2025-09-17T15:12:18.954086898+07:00","level":"INFO","msg":"sender: closed","stream_id":"podclwp5"}
+{"time":"2025-09-17T15:12:18.95411787+07:00","level":"INFO","msg":"stream: closed","id":"podclwp5"}

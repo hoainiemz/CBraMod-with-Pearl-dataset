@@ -1,0 +1,11 @@
+{"time":"2025-09-18T22:23:50.447826575+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T22:23:50.887237849+07:00","level":"INFO","msg":"stream: created new stream","id":"pfiyst64"}
+{"time":"2025-09-18T22:23:50.887303388+07:00","level":"INFO","msg":"stream: started","id":"pfiyst64"}
+{"time":"2025-09-18T22:23:50.887331707+07:00","level":"INFO","msg":"writer: started","stream_id":"pfiyst64"}
+{"time":"2025-09-18T22:23:50.887350667+07:00","level":"INFO","msg":"sender: started","stream_id":"pfiyst64"}
+{"time":"2025-09-18T22:23:50.887379855+07:00","level":"INFO","msg":"handler: started","stream_id":"pfiyst64"}
+{"time":"2025-09-18T22:24:05.03777947+07:00","level":"INFO","msg":"stream: closing","id":"pfiyst64"}
+{"time":"2025-09-18T22:24:06.359877607+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T22:24:06.735155707+07:00","level":"INFO","msg":"handler: closed","stream_id":"pfiyst64"}
+{"time":"2025-09-18T22:24:06.735297764+07:00","level":"INFO","msg":"sender: closed","stream_id":"pfiyst64"}
+{"time":"2025-09-18T22:24:06.735318216+07:00","level":"INFO","msg":"stream: closed","id":"pfiyst64"}

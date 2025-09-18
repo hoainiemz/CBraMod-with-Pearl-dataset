@@ -1,0 +1,29 @@
+{
+  "os": "Linux-6.8.0-65-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.11",
+  "startedAt": "2025-09-12T18:03:14.988096Z",
+  "args": [
+    "--lr",
+    "3e-4",
+    "--downstream_dataset",
+    "PEARL",
+    "--datasets_dir",
+    "/mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl",
+    "--num_of_classes",
+    "2",
+    "--epochs",
+    "20"
+  ],
+  "program": "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py",
+  "codePath": "finetune_kfold_pearl.py",
+  "codePathLocal": "finetune_kfold_pearl.py",
+  "git": {
+    "remote": "https://github.com/wjq-learning/CBraMod.git",
+    "commit": "7b463f69cd560205b5d4d061bc8f3a2b5906eba1"
+  },
+  "email": "nam.th180805@gmail.com",
+  "root": "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod",
+  "host": "gpus-Super-Server",
+  "executable": "/mnt/disk1/aiotlab/envs/hoainiem/bin/python",
+  "writerId": "ukgn3pi20av422nsqnssu5zfq2o2ptjj"
+}

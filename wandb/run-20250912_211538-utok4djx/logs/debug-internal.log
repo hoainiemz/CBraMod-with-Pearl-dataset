@@ -1,0 +1,11 @@
+{"time":"2025-09-12T21:15:38.936332098+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-12T21:15:39.390678088+07:00","level":"INFO","msg":"stream: created new stream","id":"utok4djx"}
+{"time":"2025-09-12T21:15:39.39075846+07:00","level":"INFO","msg":"stream: started","id":"utok4djx"}
+{"time":"2025-09-12T21:15:39.390799988+07:00","level":"INFO","msg":"handler: started","stream_id":"utok4djx"}
+{"time":"2025-09-12T21:15:39.39081206+07:00","level":"INFO","msg":"writer: started","stream_id":"utok4djx"}
+{"time":"2025-09-12T21:15:39.390853192+07:00","level":"INFO","msg":"sender: started","stream_id":"utok4djx"}
+{"time":"2025-09-12T21:17:35.929112757+07:00","level":"INFO","msg":"stream: closing","id":"utok4djx"}
+{"time":"2025-09-12T21:17:36.677050107+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-12T21:17:37.011290769+07:00","level":"INFO","msg":"handler: closed","stream_id":"utok4djx"}
+{"time":"2025-09-12T21:17:37.011487062+07:00","level":"INFO","msg":"sender: closed","stream_id":"utok4djx"}
+{"time":"2025-09-12T21:17:37.01152303+07:00","level":"INFO","msg":"stream: closed","id":"utok4djx"}

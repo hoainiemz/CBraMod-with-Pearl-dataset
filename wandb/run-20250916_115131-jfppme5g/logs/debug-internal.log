@@ -1,0 +1,12 @@
+{"time":"2025-09-16T11:51:31.819227756+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-16T11:51:32.242533274+07:00","level":"INFO","msg":"stream: created new stream","id":"jfppme5g"}
+{"time":"2025-09-16T11:51:32.242620603+07:00","level":"INFO","msg":"stream: started","id":"jfppme5g"}
+{"time":"2025-09-16T11:51:32.242642232+07:00","level":"INFO","msg":"writer: started","stream_id":"jfppme5g"}
+{"time":"2025-09-16T11:51:32.242659292+07:00","level":"INFO","msg":"handler: started","stream_id":"jfppme5g"}
+{"time":"2025-09-16T11:51:32.242690228+07:00","level":"INFO","msg":"sender: started","stream_id":"jfppme5g"}
+{"time":"2025-09-16T11:54:33.728918334+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001126357}],"total_operations":1}}
+{"time":"2025-09-16T11:54:34.579368429+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-16T11:54:34.952131085+07:00","level":"INFO","msg":"stream: closing","id":"jfppme5g"}
+{"time":"2025-09-16T11:54:34.952178979+07:00","level":"INFO","msg":"handler: closed","stream_id":"jfppme5g"}
+{"time":"2025-09-16T11:54:34.952363899+07:00","level":"INFO","msg":"sender: closed","stream_id":"jfppme5g"}
+{"time":"2025-09-16T11:54:34.952408271+07:00","level":"INFO","msg":"stream: closed","id":"jfppme5g"}

@@ -1,0 +1,12 @@
+{"time":"2025-09-18T15:16:33.644157792+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T15:16:34.067280612+07:00","level":"INFO","msg":"stream: created new stream","id":"vaywdpui"}
+{"time":"2025-09-18T15:16:34.067334113+07:00","level":"INFO","msg":"stream: started","id":"vaywdpui"}
+{"time":"2025-09-18T15:16:34.067364153+07:00","level":"INFO","msg":"writer: started","stream_id":"vaywdpui"}
+{"time":"2025-09-18T15:16:34.067373979+07:00","level":"INFO","msg":"sender: started","stream_id":"vaywdpui"}
+{"time":"2025-09-18T15:16:34.06742812+07:00","level":"INFO","msg":"handler: started","stream_id":"vaywdpui"}
+{"time":"2025-09-18T15:19:24.768582318+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001166231}],"total_operations":1}}
+{"time":"2025-09-18T15:19:26.09729796+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T15:19:26.465694289+07:00","level":"INFO","msg":"stream: closing","id":"vaywdpui"}
+{"time":"2025-09-18T15:19:26.465728971+07:00","level":"INFO","msg":"handler: closed","stream_id":"vaywdpui"}
+{"time":"2025-09-18T15:19:26.465814498+07:00","level":"INFO","msg":"sender: closed","stream_id":"vaywdpui"}
+{"time":"2025-09-18T15:19:26.465832621+07:00","level":"INFO","msg":"stream: closed","id":"vaywdpui"}

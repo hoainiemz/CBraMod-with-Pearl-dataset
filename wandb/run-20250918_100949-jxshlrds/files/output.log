@@ -1,0 +1,12 @@
+503 112 137
+752
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 112, in <module>
+    main()
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py", line 84, in main
+    model = model_for_pearl.Model(params).cuda()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/models/model_for_pearl.py", line 123, in __init__
+    nn.RELU(),
+    ^^^^^^^
+AttributeError: module 'torch.nn' has no attribute 'RELU'. Did you mean: 'ReLU'?

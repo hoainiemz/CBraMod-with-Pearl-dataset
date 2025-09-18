@@ -1,0 +1,105 @@
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 71/71 [00:19<00:00,  3.56it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:00<00:00, 15.96it/s]
+Epoch 1 : Training Loss: 1.61384, acc: 0.21067, kappa: 0.01333, f1: 0.13111, LR: 0.00001, Time elapsed 0.35 mins
+[[  3   0 102  39   6]
+ [  9   0 104  29   8]
+ [  1   0 107  37   5]
+ [  2   0  99  45   4]
+ [  2   0 105  40   3]]
+kappa increasing....saving weights !!
+Val Evaluation: acc: 0.21067, kappa: 0.01333, f1: 0.13111
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 71/71 [00:16<00:00,  4.35it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:00<00:00, 14.04it/s]
+Epoch 2 : Training Loss: 1.59789, acc: 0.23467, kappa: 0.04333, f1: 0.22197, LR: 0.00001, Time elapsed 0.29 mins
+[[15 35 33 59  8]
+ [15 35 43 45 12]
+ [ 5 34 48 51 12]
+ [16 31 38 58  7]
+ [14 27 37 52 20]]
+kappa increasing....saving weights !!
+Val Evaluation: acc: 0.23467, kappa: 0.04333, f1: 0.22197
+  1%|██                                                                                                                                                   | 1/71 [00:00<00:28,  2.43it/s]
+[33m[W 2025-08-28 22:45:38,037][0m Trial 0 failed with parameters: {'lr': 1.0253509690168497e-05, 'weight_decay': 0.029334453957883984, '--dropout': 0.146398788362281, '--clip_value': 1.397987726295555} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 201, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py", line 23, in objective
+    score = eval(config, trial)['kappa']
+            ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/optuna_trainable.py", line 118, in eval
+    return t.train_for_multiclass(trial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_trainer.py", line 105, in train_for_multiclass
+    loss.backward()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-08-28 22:45:38,040][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py", line 37, in <module>
+    study.optimize(objective, n_trials=100)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 258, in _run_trial
+    raise func_err
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 201, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py", line 23, in objective
+    score = eval(config, trial)['kappa']
+            ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/optuna_trainable.py", line 118, in eval
+    return t.train_for_multiclass(trial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_trainer.py", line 105, in train_for_multiclass
+    loss.backward()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py", line 37, in <module>
+    study.optimize(objective, n_trials=100)
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 258, in _run_trial
+    raise func_err
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/optuna/study/_optimize.py", line 201, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/hyper_optuna.py", line 23, in objective
+    score = eval(config, trial)['kappa']
+            ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/optuna_trainable.py", line 118, in eval
+    return t.train_for_multiclass(trial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_trainer.py", line 105, in train_for_multiclass
+    loss.backward()
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/mnt/disk1/aiotlab/envs/hoainiem/lib/python3.12/site-packages/torch/autograd/graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

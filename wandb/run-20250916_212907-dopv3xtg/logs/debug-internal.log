@@ -1,0 +1,12 @@
+{"time":"2025-09-16T21:29:07.608305822+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-16T21:29:08.02681267+07:00","level":"INFO","msg":"stream: created new stream","id":"dopv3xtg"}
+{"time":"2025-09-16T21:29:08.026871223+07:00","level":"INFO","msg":"stream: started","id":"dopv3xtg"}
+{"time":"2025-09-16T21:29:08.026906539+07:00","level":"INFO","msg":"writer: started","stream_id":"dopv3xtg"}
+{"time":"2025-09-16T21:29:08.026916465+07:00","level":"INFO","msg":"handler: started","stream_id":"dopv3xtg"}
+{"time":"2025-09-16T21:29:08.026944739+07:00","level":"INFO","msg":"sender: started","stream_id":"dopv3xtg"}
+{"time":"2025-09-16T21:31:32.875696869+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001598147}],"total_operations":1}}
+{"time":"2025-09-16T21:31:34.323389806+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-16T21:31:34.843764522+07:00","level":"INFO","msg":"stream: closing","id":"dopv3xtg"}
+{"time":"2025-09-16T21:31:34.843799654+07:00","level":"INFO","msg":"handler: closed","stream_id":"dopv3xtg"}
+{"time":"2025-09-16T21:31:34.843869888+07:00","level":"INFO","msg":"sender: closed","stream_id":"dopv3xtg"}
+{"time":"2025-09-16T21:31:34.843883994+07:00","level":"INFO","msg":"stream: closed","id":"dopv3xtg"}

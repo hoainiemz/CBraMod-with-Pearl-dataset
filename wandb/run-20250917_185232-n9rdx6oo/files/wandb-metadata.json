@@ -1,0 +1,39 @@
+{
+  "os":  "Linux-6.8.0-65-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.11",
+  "startedAt":  "2025-09-17T11:52:32.192067Z",
+  "args":  [
+    "--epochs",
+    "20",
+    "--batch_size",
+    "16",
+    "--lr",
+    "5e-4",
+    "--downstream_dataset",
+    "PEARL",
+    "--datasets_dir",
+    "mnt/disk1/aiotlab/namth/EEGFoundationModel/datasets/pearl_30s",
+    "--num_of_classes",
+    "2",
+    "--modality_mode",
+    "mono",
+    "--project_name",
+    "EEG_HUST_MULTIMODALITY3",
+    "--classifier",
+    "all_patch_reps_twolayer",
+    "--foundation_dir",
+    "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/pretrained_weights/pretrained_108.pth"
+  ],
+  "program":  "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod/finetune_kfold_pearl.py",
+  "codePath":  "finetune_kfold_pearl.py",
+  "codePathLocal":  "finetune_kfold_pearl.py",
+  "git":  {
+    "remote":  "https://github.com/wjq-learning/CBraMod.git",
+    "commit":  "7b463f69cd560205b5d4d061bc8f3a2b5906eba1"
+  },
+  "email":  "nam.th180805@gmail.com",
+  "root":  "/mnt/disk1/aiotlab/namth/EEGFoundationModel/CBraMod",
+  "host":  "gpus-Super-Server",
+  "executable":  "/mnt/disk1/aiotlab/envs/cbramod/bin/python",
+  "writerId":  "px7eqvpsdzwlw7sxj5czy0v83sanpw2m"
+}

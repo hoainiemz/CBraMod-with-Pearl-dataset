@@ -1,0 +1,12 @@
+{"time":"2025-09-17T20:32:32.011122881+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T20:32:32.42446797+07:00","level":"INFO","msg":"stream: created new stream","id":"ci1luspn"}
+{"time":"2025-09-17T20:32:32.424517607+07:00","level":"INFO","msg":"stream: started","id":"ci1luspn"}
+{"time":"2025-09-17T20:32:32.424566493+07:00","level":"INFO","msg":"handler: started","stream_id":"ci1luspn"}
+{"time":"2025-09-17T20:32:32.424557657+07:00","level":"INFO","msg":"writer: started","stream_id":"ci1luspn"}
+{"time":"2025-09-17T20:32:32.424624557+07:00","level":"INFO","msg":"sender: started","stream_id":"ci1luspn"}
+{"time":"2025-09-17T20:42:52.013326224+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001069395}],"total_operations":1}}
+{"time":"2025-09-17T20:42:52.958123447+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T20:42:53.343019838+07:00","level":"INFO","msg":"stream: closing","id":"ci1luspn"}
+{"time":"2025-09-17T20:42:53.343052716+07:00","level":"INFO","msg":"handler: closed","stream_id":"ci1luspn"}
+{"time":"2025-09-17T20:42:53.343164049+07:00","level":"INFO","msg":"sender: closed","stream_id":"ci1luspn"}
+{"time":"2025-09-17T20:42:53.34320723+07:00","level":"INFO","msg":"stream: closed","id":"ci1luspn"}

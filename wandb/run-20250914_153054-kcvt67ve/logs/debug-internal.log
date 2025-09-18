@@ -1,0 +1,12 @@
+{"time":"2025-09-14T15:30:54.332717502+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-14T15:30:54.784114666+07:00","level":"INFO","msg":"stream: created new stream","id":"kcvt67ve"}
+{"time":"2025-09-14T15:30:54.78415827+07:00","level":"INFO","msg":"stream: started","id":"kcvt67ve"}
+{"time":"2025-09-14T15:30:54.784232385+07:00","level":"INFO","msg":"writer: started","stream_id":"kcvt67ve"}
+{"time":"2025-09-14T15:30:54.784264665+07:00","level":"INFO","msg":"sender: started","stream_id":"kcvt67ve"}
+{"time":"2025-09-14T15:30:54.784271523+07:00","level":"INFO","msg":"handler: started","stream_id":"kcvt67ve"}
+{"time":"2025-09-14T15:34:33.148148639+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T15:34:33.264791645+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 18-19, summary, console lines 227-242","runtime_seconds":0.116378228}],"total_operations":1}}
+{"time":"2025-09-14T15:34:33.513037483+07:00","level":"INFO","msg":"stream: closing","id":"kcvt67ve"}
+{"time":"2025-09-14T15:34:33.513103387+07:00","level":"INFO","msg":"handler: closed","stream_id":"kcvt67ve"}
+{"time":"2025-09-14T15:34:33.513270886+07:00","level":"INFO","msg":"sender: closed","stream_id":"kcvt67ve"}
+{"time":"2025-09-14T15:34:33.513332646+07:00","level":"INFO","msg":"stream: closed","id":"kcvt67ve"}

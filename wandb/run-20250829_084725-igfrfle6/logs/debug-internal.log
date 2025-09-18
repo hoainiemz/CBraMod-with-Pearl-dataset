@@ -1,0 +1,12 @@
+{"time":"2025-08-29T08:47:27.280327743+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-29T08:47:27.719294292+07:00","level":"INFO","msg":"stream: created new stream","id":"igfrfle6"}
+{"time":"2025-08-29T08:47:27.719346516+07:00","level":"INFO","msg":"stream: started","id":"igfrfle6"}
+{"time":"2025-08-29T08:47:27.719385008+07:00","level":"INFO","msg":"writer: started","stream_id":"igfrfle6"}
+{"time":"2025-08-29T08:47:27.71939559+07:00","level":"INFO","msg":"sender: started","stream_id":"igfrfle6"}
+{"time":"2025-08-29T08:47:27.719412494+07:00","level":"INFO","msg":"handler: started","stream_id":"igfrfle6"}
+{"time":"2025-08-29T08:58:19.458397642+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.704278357,"progress":"54.2KB/54.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.436870503,"progress":"2.7KB/2.7KB"}],"total_operations":2}}
+{"time":"2025-08-29T08:58:19.568840592+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-29T08:58:19.985108737+07:00","level":"INFO","msg":"stream: closing","id":"igfrfle6"}
+{"time":"2025-08-29T08:58:19.985142347+07:00","level":"INFO","msg":"handler: closed","stream_id":"igfrfle6"}
+{"time":"2025-08-29T08:58:19.985269585+07:00","level":"INFO","msg":"sender: closed","stream_id":"igfrfle6"}
+{"time":"2025-08-29T08:58:19.985295436+07:00","level":"INFO","msg":"stream: closed","id":"igfrfle6"}

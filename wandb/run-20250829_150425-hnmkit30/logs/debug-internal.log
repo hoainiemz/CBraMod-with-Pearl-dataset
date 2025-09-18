@@ -1,0 +1,12 @@
+{"time":"2025-08-29T15:04:27.724702545+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-29T15:04:28.771554954+07:00","level":"INFO","msg":"stream: created new stream","id":"hnmkit30"}
+{"time":"2025-08-29T15:04:28.771611634+07:00","level":"INFO","msg":"stream: started","id":"hnmkit30"}
+{"time":"2025-08-29T15:04:28.771640995+07:00","level":"INFO","msg":"writer: started","stream_id":"hnmkit30"}
+{"time":"2025-08-29T15:04:28.771667356+07:00","level":"INFO","msg":"sender: started","stream_id":"hnmkit30"}
+{"time":"2025-08-29T15:04:28.771655339+07:00","level":"INFO","msg":"handler: started","stream_id":"hnmkit30"}
+{"time":"2025-08-29T15:16:32.949482069+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.707897238,"progress":"49.6KB/49.6KB"}],"total_operations":1}}
+{"time":"2025-08-29T15:16:32.961626995+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-29T15:16:33.34066361+07:00","level":"INFO","msg":"stream: closing","id":"hnmkit30"}
+{"time":"2025-08-29T15:16:33.340695754+07:00","level":"INFO","msg":"handler: closed","stream_id":"hnmkit30"}
+{"time":"2025-08-29T15:16:33.340793174+07:00","level":"INFO","msg":"sender: closed","stream_id":"hnmkit30"}
+{"time":"2025-08-29T15:16:33.340809829+07:00","level":"INFO","msg":"stream: closed","id":"hnmkit30"}

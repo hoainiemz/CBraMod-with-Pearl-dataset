@@ -1,0 +1,12 @@
+{"time":"2025-09-18T23:15:49.327065745+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-18T23:15:50.050303264+07:00","level":"INFO","msg":"stream: created new stream","id":"wrvv80s8"}
+{"time":"2025-09-18T23:15:50.050362504+07:00","level":"INFO","msg":"stream: started","id":"wrvv80s8"}
+{"time":"2025-09-18T23:15:50.05039035+07:00","level":"INFO","msg":"writer: started","stream_id":"wrvv80s8"}
+{"time":"2025-09-18T23:15:50.050401794+07:00","level":"INFO","msg":"handler: started","stream_id":"wrvv80s8"}
+{"time":"2025-09-18T23:15:50.050483994+07:00","level":"INFO","msg":"sender: started","stream_id":"wrvv80s8"}
+{"time":"2025-09-18T23:18:17.903862008+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.001142568}],"total_operations":1}}
+{"time":"2025-09-18T23:18:18.771535326+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-18T23:18:19.129900243+07:00","level":"INFO","msg":"stream: closing","id":"wrvv80s8"}
+{"time":"2025-09-18T23:18:19.129932136+07:00","level":"INFO","msg":"handler: closed","stream_id":"wrvv80s8"}
+{"time":"2025-09-18T23:18:19.130016309+07:00","level":"INFO","msg":"sender: closed","stream_id":"wrvv80s8"}
+{"time":"2025-09-18T23:18:19.130032152+07:00","level":"INFO","msg":"stream: closed","id":"wrvv80s8"}

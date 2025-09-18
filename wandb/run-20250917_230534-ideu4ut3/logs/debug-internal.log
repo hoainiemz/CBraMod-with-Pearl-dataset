@@ -1,0 +1,13 @@
+{"time":"2025-09-17T23:05:35.03425821+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-17T23:05:35.46656813+07:00","level":"INFO","msg":"stream: created new stream","id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:35.466620244+07:00","level":"INFO","msg":"stream: started","id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:35.466659018+07:00","level":"INFO","msg":"writer: started","stream_id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:35.466665844+07:00","level":"INFO","msg":"handler: started","stream_id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:35.466744981+07:00","level":"INFO","msg":"sender: started","stream_id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:35.839742309+07:00","level":"INFO","msg":"stream: closing","id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:36.112586075+07:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-17T23:05:36.112788331+07:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project /EEG_HUST_MULTIMODALITY not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-09-17T23:05:36.113754452+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-17T23:05:36.113815547+07:00","level":"INFO","msg":"handler: closed","stream_id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:36.113907259+07:00","level":"INFO","msg":"sender: closed","stream_id":"ideu4ut3"}
+{"time":"2025-09-17T23:05:36.113921633+07:00","level":"INFO","msg":"stream: closed","id":"ideu4ut3"}
