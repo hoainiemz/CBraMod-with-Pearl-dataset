@@ -1,1 +1,0 @@
-{"val/acc":1,"_wandb":{"runtime":163},"time_min":0.12981214537285268,"test/acc":0.4936676798378926,"val/roc_auc":1,"lr":1e-06,"val/pr_auc":1,"_timestamp":1.7580311431910892e+09,"test/pr_auc":0.6434217421732629,"epoch":20,"train/loss":6.185252277646214e-05,"test/roc_auc":0.5571175278622087,"_runtime":163,"_step":20}
