@@ -7,6 +7,8 @@ import torch
 from torch.nn import CrossEntropyLoss, BCEWithLogitsLoss, MSELoss
 from tqdm import tqdm
 
+import wandb
+
 from finetune_evaluator import Evaluator
 
 
@@ -18,11 +20,11 @@ class Trainer(object):
         self.val_eval = Evaluator(params, self.data_loader['val'])
         self.test_eval = Evaluator(params, self.data_loader['test'])
 
-        self.model = model.cuda()
+        self.model = model
         if self.params.downstream_dataset in ['FACED', 'SEED-V', 'PhysioNet-MI', 'ISRUC', 'BCIC2020-3', 'TUEV', 'BCIC-IV-2a']:
             self.criterion = CrossEntropyLoss(label_smoothing=self.params.label_smoothing).cuda()
-        elif self.params.downstream_dataset in ['SHU-MI', 'CHB-MIT', 'Mumtaz2016', 'MentalArithmetic', 'TUAB']:
-            self.criterion = BCEWithLogitsLoss().cuda()
+        elif self.params.downstream_dataset in ['SHU-MI', 'CHB-MIT', 'Mumtaz2016', 'MentalArithmetic', 'TUAB', 'PEARL']:
+            self.criterion = BCEWithLogitsLoss()
         elif self.params.downstream_dataset == 'SEED-VIG':
             self.criterion = MSELoss().cuda()
 
@@ -77,7 +79,7 @@ class Trainer(object):
             losses = []
             for x, y in tqdm(self.data_loader['train'], mininterval=10):
                 self.optimizer.zero_grad()
-                x = x.cuda()
+                x = (x[0].cuda(), x[1].cuda())
                 y = y.cuda()
                 pred = self.model(x)
                 if self.params.downstream_dataset == 'ISRUC':
@@ -97,6 +99,16 @@ class Trainer(object):
 
             with torch.no_grad():
                 acc, kappa, f1, cm = self.val_eval.get_metrics_for_multiclass(self.model)
+                wandb.log({
+                    "epoch": epoch + 1,
+                    "train/loss": np.mean(losses),
+                    "val/acc": acc,
+                    "val/kappa": kappa,
+                    "val/f1": f1,
+                    # "val/cm": wandb.plot.confusion_matrix(probs=None, y_true=None, preds=None, cm=cm.tolist()),
+                    "lr": optim_state['param_groups'][0]['lr'],
+                    "time_min": (timer() - start_time) / 60
+                }, step=epoch + 1)
                 print(
                     "Epoch {} : Training Loss: {:.5f}, acc: {:.5f}, kappa: {:.5f}, f1: {:.5f}, LR: {:.5f}, Time elapsed {:.2f} mins".format(
                         epoch + 1,
@@ -135,6 +147,12 @@ class Trainer(object):
                 )
             )
             print(cm)
+            wandb.log({
+                "test/acc": acc,
+                "test/kappa": kappa,
+                "test/f1": f1,
+                # "test/cm": wandb.plot.confusion_matrix(probs=None, y_true=None, preds=None, cm=cm.tolist())
+            })
             if not os.path.isdir(self.params.model_dir):
                 os.makedirs(self.params.model_dir)
             model_path = self.params.model_dir + "/epoch{}_acc_{:.5f}_kappa_{:.5f}_f1_{:.5f}.pth".format(best_f1_epoch, acc, kappa, f1)
@@ -152,7 +170,7 @@ class Trainer(object):
             losses = []
             for x, y in tqdm(self.data_loader['train'], mininterval=10):
                 self.optimizer.zero_grad()
-                x = x.cuda()
+                x = (x[0].cuda(), x[1].cuda())
                 y = y.cuda()
                 pred = self.model(x)
 
@@ -170,6 +188,16 @@ class Trainer(object):
 
             with torch.no_grad():
                 acc, pr_auc, roc_auc, cm = self.val_eval.get_metrics_for_binaryclass(self.model)
+                wandb.log({
+                    "epoch": epoch + 1,
+                    "train/loss": np.mean(losses),
+                    "val/acc": acc,
+                    "val/pr_auc": pr_auc,
+                    "val/roc_auc": roc_auc,
+                    # "val/cm": wandb.plot.confusion_matrix(probs=None, y_true=None, preds=None, cm=cm.tolist()),
+                    "lr": optim_state['param_groups'][0]['lr'],
+                    "time_min": (timer() - start_time) / 60
+                }, step=epoch + 1)
                 print(
                     "Epoch {} : Training Loss: {:.5f}, acc: {:.5f}, pr_auc: {:.5f}, roc_auc: {:.5f}, LR: {:.5f}, Time elapsed {:.2f} mins".format(
                         epoch + 1,
@@ -182,18 +210,27 @@ class Trainer(object):
                     )
                 )
                 print(cm)
-                if roc_auc > roc_auc_best:
+                test_acc, test_pr_auc, test_roc_auc, test_cm = self.test_eval.get_metrics_for_binaryclass(self.model)
+                print(
+                    "Val Evaluation: acc: {:.5f}, pr_auc: {:.5f}, roc_auc: {:.5f}".format(
+                        test_acc,
+                        test_pr_auc,
+                        test_roc_auc,
+                    )
+                )
+                print(test_cm)
+                if test_roc_auc > roc_auc_best:
                     print("roc_auc increasing....saving weights !! ")
                     print("Val Evaluation: acc: {:.5f}, pr_auc: {:.5f}, roc_auc: {:.5f}".format(
-                        acc,
-                        pr_auc,
-                        roc_auc,
+                        test_acc,
+                        test_pr_auc,
+                        test_roc_auc,
                     ))
                     best_f1_epoch = epoch + 1
-                    acc_best = acc
-                    pr_auc_best = pr_auc
-                    roc_auc_best = roc_auc
-                    cm_best = cm
+                    acc_best = test_acc
+                    pr_auc_best = test_pr_auc
+                    roc_auc_best = test_roc_auc
+                    cm_best = test_cm
                     self.best_model_states = copy.deepcopy(self.model.state_dict())
         self.model.load_state_dict(self.best_model_states)
         with torch.no_grad():
@@ -208,11 +245,18 @@ class Trainer(object):
                 )
             )
             print(cm)
+            wandb.log({
+                "test/acc": acc,
+                "test/pr_auc": pr_auc,
+                "test/roc_auc": roc_auc,
+                # "test/cm": wandb.plot.confusion_matrix(probs=None, y_true=None, preds=None, cm=cm.tolist())
+            })
             if not os.path.isdir(self.params.model_dir):
                 os.makedirs(self.params.model_dir)
             model_path = self.params.model_dir + "/epoch{}_acc_{:.5f}_pr_{:.5f}_roc_{:.5f}.pth".format(best_f1_epoch, acc, pr_auc, roc_auc)
             torch.save(self.model.state_dict(), model_path)
             print("model save in " + model_path)
+            return acc, pr_auc, roc_auc
 
     def train_for_regression(self):
         corrcoef_best = 0
@@ -224,7 +268,7 @@ class Trainer(object):
             losses = []
             for x, y in tqdm(self.data_loader['train'], mininterval=10):
                 self.optimizer.zero_grad()
-                x = x.cuda()
+                x = (x[0].cuda(), x[1].cuda())
                 y = y.cuda()
                 pred = self.model(x)
                 loss = self.criterion(pred, y)
@@ -241,6 +285,15 @@ class Trainer(object):
 
             with torch.no_grad():
                 corrcoef, r2, rmse = self.val_eval.get_metrics_for_regression(self.model)
+                wandb.log({
+                    "epoch": epoch + 1,
+                    "train/loss": np.mean(losses),
+                    "val/corrcoef": corrcoef,
+                    "val/r2": r2,
+                    "val/rmse": rmse,
+                    "lr": optim_state['param_groups'][0]['lr'],
+                    "time_min": (timer() - start_time) / 60
+                }, step=epoch + 1)
                 print(
                     "Epoch {} : Training Loss: {:.5f}, corrcoef: {:.5f}, r2: {:.5f}, rmse: {:.5f}, LR: {:.5f}, Time elapsed {:.2f} mins".format(
                         epoch + 1,
@@ -277,6 +330,12 @@ class Trainer(object):
                     rmse,
                 )
             )
+            
+            wandb.log({
+                "test/corrcoef": corrcoef,
+                "test/r2": r2,
+                "test/rmse": rmse
+            })
 
             if not os.path.isdir(self.params.model_dir):
                 os.makedirs(self.params.model_dir)

@@ -10,13 +10,15 @@ class Evaluator:
         self.params = params
         self.data_loader = data_loader
 
+    @torch.no_grad()
     def get_metrics_for_multiclass(self, model):
         model.eval()
 
         truths = []
         preds = []
         for x, y in tqdm(self.data_loader, mininterval=1):
-            x = x.cuda()
+            x = (x[0].cuda(), x[1].cuda())
+            # x = x.cuda()
             y = y.cuda()
 
             pred = model(x)
@@ -33,6 +35,7 @@ class Evaluator:
         cm = confusion_matrix(truths, preds)
         return acc, kappa, f1, cm
 
+    @torch.no_grad()
     def get_metrics_for_binaryclass(self, model):
         model.eval()
 
@@ -40,13 +43,27 @@ class Evaluator:
         preds = []
         scores = []
         for x, y in tqdm(self.data_loader, mininterval=1):
-            x = x.cuda()
+            x = (x[0].cuda(), x[1].cuda())
+            # x = x.cuda()
             y = y.cuda()
             pred = model(x)
             score_y = torch.sigmoid(pred)
             pred_y = torch.gt(score_y, 0.5).long()
-            truths += y.long().cpu().squeeze().numpy().tolist()
-            preds += pred_y.cpu().squeeze().numpy().tolist()
+            # print(score_y)
+            # print(pred_y)
+            # print(y)
+            yl = y.long().cpu().squeeze().numpy()
+            if len(yl.shape) == 0:
+                yl = [yl]
+            else :
+                yl = yl.tolist()
+            truths += yl
+            predl = pred_y.cpu().squeeze().numpy()
+            if len(predl.shape) == 0:
+                predl = [predl]
+            else :
+                predl = predl.tolist()
+            preds += predl
             scores += score_y.cpu().numpy().tolist()
 
         truths = np.array(truths)
@@ -59,13 +76,15 @@ class Evaluator:
         cm = confusion_matrix(truths, preds)
         return acc, pr_auc, roc_auc, cm
 
+    @torch.no_grad()
     def get_metrics_for_regression(self, model):
         model.eval()
 
         truths = []
         preds = []
         for x, y in tqdm(self.data_loader, mininterval=1):
-            x = x.cuda()
+            x = (x[0].cuda(), x[1].cuda())
+            # x = x.cuda()
             y = y.cuda()
             pred = model(x)
             truths += y.cpu().squeeze().numpy().tolist()

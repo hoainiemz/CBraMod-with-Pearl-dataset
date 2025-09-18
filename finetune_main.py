@@ -4,18 +4,20 @@ import random
 import numpy as np
 import torch
 
+import wandb
+
 from datasets import faced_dataset, seedv_dataset, physio_dataset, shu_dataset, isruc_dataset, chb_dataset, \
-    speech_dataset, mumtaz_dataset, seedvig_dataset, stress_dataset, tuev_dataset, tuab_dataset, bciciv2a_dataset
+    speech_dataset, mumtaz_dataset, seedvig_dataset, stress_dataset, tuev_dataset, tuab_dataset, bciciv2a_dataset, pearl_dataset
 from finetune_trainer import Trainer
 from models import model_for_faced, model_for_seedv, model_for_physio, model_for_shu, model_for_isruc, model_for_chb, \
     model_for_speech, model_for_mumtaz, model_for_seedvig, model_for_stress, model_for_tuev, model_for_tuab, \
-    model_for_bciciv2a
+    model_for_bciciv2a, model_for_pearl
 
 
 def main():
     parser = argparse.ArgumentParser(description='Big model downstream')
     parser.add_argument('--seed', type=int, default=3407, help='random seed (default: 0)')
-    parser.add_argument('--cuda', type=int, default=1, help='cuda number (default: 1)')
+    parser.add_argument('--cuda', type=int, default=0, help='cuda number (default: 1)')
     parser.add_argument('--epochs', type=int, default=50, help='number of epochs (default: 5)')
     parser.add_argument('--batch_size', type=int, default=64, help='batch size for training (default: 32)')
     parser.add_argument('--lr', type=float, default=1e-4, help='learning rate (default: 1e-3)')
@@ -34,17 +36,17 @@ def main():
     """############ Downstream dataset settings ############"""
     parser.add_argument('--downstream_dataset', type=str, default='FACED',
                         help='[FACED, SEED-V, PhysioNet-MI, SHU-MI, ISRUC, CHB-MIT, BCIC2020-3, Mumtaz2016, '
-                             'SEED-VIG, MentalArithmetic, TUEV, TUAB, BCIC-IV-2a]')
+                             'SEED-VIG, MentalArithmetic, TUEV, TUAB, BCIC-IV-2a, PEARL]')
     parser.add_argument('--datasets_dir', type=str,
                         default='/data/datasets/BigDownstream/Faced/processed',
                         help='datasets_dir')
     parser.add_argument('--num_of_classes', type=int, default=9, help='number of classes')
-    parser.add_argument('--model_dir', type=str, default='/data/wjq/models_weights/Big/BigFaced', help='model_dir')
+    parser.add_argument('--model_dir', type=str, default='./data/wjq/models_weights/Big/BigFaced', help='model_dir')
     """############ Downstream dataset settings ############"""
 
     parser.add_argument('--num_workers', type=int, default=16, help='num_workers')
     parser.add_argument('--label_smoothing', type=float, default=0.1, help='label_smoothing')
-    parser.add_argument('--multi_lr', type=bool, default=True,
+    parser.add_argument('--multi_lr', type=bool, default=False,
                         help='multi_lr')  # set different learning rates for different modules
     parser.add_argument('--frozen', type=bool,
                         default=False, help='frozen')
@@ -55,10 +57,18 @@ def main():
                         help='foundation_dir')
 
     params = parser.parse_args()
+    
+    group = 'Reproduce'
+    
+    wandb.init(project='EEG_HUST_MULTIMODALITY', 
+               group=group,
+               name=f'data_{params.downstream_dataset}_seed_{params.seed}',
+               config=vars(params))
+    
     print(params)
 
     setup_seed(params.seed)
-    torch.cuda.set_device(params.cuda)
+    # torch.cuda.set_device(params.cuda)
     print('The downstream dataset is {}'.format(params.downstream_dataset))
     if params.downstream_dataset == 'FACED':
         load_dataset = faced_dataset.LoadDataset(params)
@@ -138,6 +148,12 @@ def main():
         model = model_for_bciciv2a.Model(params)
         t = Trainer(params, data_loader, model)
         t.train_for_multiclass()
+    elif params.downstream_dataset == 'PEARL':
+        load_dataset = pearl_dataset.LoadDataset(params)
+        data_loader = load_dataset.get_data_loader()
+        model = model_for_pearl.Model(params).cuda()
+        t = Trainer(params, data_loader, model)
+        t.train_for_binaryclass()
     print('Done!!!!!')
 
 
@@ -148,6 +164,7 @@ def setup_seed(seed):
     random.seed(seed)
     torch.backends.cudnn.deterministic = True
 
-
 if __name__ == '__main__':
+    wandb.login(key='ca0cbcfb28dcbf7cd1b54e0a6d40d8a482fc730f')
     main()
+    wandb.finish()
